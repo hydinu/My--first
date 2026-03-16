@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My GitHub App</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 10px 20px; font-size: 18px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Hello, GitHub!</h1>
+    <p>Clicks: <span id="count">0</span></p>
+    <button onclick="count++">Click Me!</button>
+
+    <script>
+        let count = 0;
+        const display = document.getElementById('count');
+        setInterval(() => display.innerText = count, 10);
+    </script>
+</body>
+</html>
 
